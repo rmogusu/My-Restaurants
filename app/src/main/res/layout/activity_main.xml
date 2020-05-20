@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/imageView"
+        android:id="@+id/TextView"
         android:src="@drawable/background"
         android:scaleType="centerCrop" />
 
@@ -20,6 +20,7 @@
         android:layout_marginTop="35dp"
         android:id="@+id/appNameTextView"
         android:textColor="@color/colorTextIcons"
+        android:fontFamily="@font/autour_one"
         android:textSize="40sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -30,15 +31,18 @@
         android:id="@+id/locationEditText"
         android:background="@color/colorTextIcons"
         android:layout_above="@+id/findRestaurantsButton"
+        android:fontFamily="@font/autour_one"
         android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="Enter Zip Code"
         android:layout_centerHorizontal="true" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Find Restaurants"
         android:id="@+id/findRestaurantsButton"
+        android:fontFamily="@font/autour_one"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
