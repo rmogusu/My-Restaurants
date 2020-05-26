@@ -1,4 +1,7 @@
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.services;
+
+import com.moringaschool.myrestaurants.Constants;
+import com.moringaschool.myrestaurants.models.Restaurant;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,14 +22,16 @@ public class YelpService {
 
         OkHttpClient client = new OkHttpClient.Builder()
                 .build();
+
         HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.YELP_BASE_URL).newBuilder();
         urlBuilder.addQueryParameter(Constants.YELP_LOCATION_QUERY_PARAMETER, location);
         String url = urlBuilder.build().toString();
 
-        Request request = new Request.Builder()
+        Request request= new Request.Builder()
                 .url(url)
                 .header("Authorization", Constants.YELP_API_KEY)
                 .build();
+
         Call call = client.newCall(request);
         call.enqueue(callback);
     }

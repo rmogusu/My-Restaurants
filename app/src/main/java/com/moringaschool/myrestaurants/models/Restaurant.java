@@ -1,4 +1,4 @@
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.models;
 
 import java.util.ArrayList;
 
@@ -36,14 +36,14 @@ public class Restaurant {
     }
 
     public String getWebsite() {
-        return  mWebsite;
+        return mWebsite;
     }
 
     public double getRating() {
         return mRating;
     }
 
-    public String getImageUrl(){
+    public String getImageUrl() {
         return mImageUrl;
     }
 
