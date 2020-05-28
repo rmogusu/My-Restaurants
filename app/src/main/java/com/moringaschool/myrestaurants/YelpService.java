@@ -1,4 +1,4 @@
-package com.moringaschool.myrestaurants.services;
+package com.moringaschool.myrestaurants;
 
 import com.moringaschool.myrestaurants.Constants;
 import com.moringaschool.myrestaurants.models.Restaurant;
