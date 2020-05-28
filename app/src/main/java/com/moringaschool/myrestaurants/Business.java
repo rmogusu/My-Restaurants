@@ -5,6 +5,9 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Business {
 
     @SerializedName("rating")
@@ -25,9 +28,9 @@ public class Business {
     @SerializedName("is_closed")
     @Expose
     private Boolean isClosed;
-    @SerializedName("categories")
-    @Expose
-    private List<Category> categories = null;
+//    @SerializedName("categories")
+//    @Expose
+//    private List<Category> categories = null;
     @SerializedName("review_count")
     @Expose
     private Integer reviewCount;
@@ -37,15 +40,15 @@ public class Business {
     @SerializedName("url")
     @Expose
     private String url;
-    @SerializedName("coordinates")
-    @Expose
-    private Coordinates coordinates;
+//    @SerializedName("coordinates")
+//    @Expose
+//    private Coordinates coordinates;
     @SerializedName("image_url")
     @Expose
     private String imageUrl;
-    @SerializedName("location")
-    @Expose
-    private Location location;
+//    @SerializedName("location")
+//    @Expose
+//    private Location location;
     @SerializedName("distance")
     @Expose
     private Double distance;
@@ -86,13 +89,13 @@ public class Business {
         this.id = id;
         this.alias = alias;
         this.isClosed = isClosed;
-        this.categories = categories;
+        //this.categories = categories;
         this.reviewCount = reviewCount;
         this.name = name;
         this.url = url;
-        this.coordinates = coordinates;
+        //this.coordinates = coordinates;
         this.imageUrl = imageUrl;
-        this.location = location;
+        //this.location = location;
         this.distance = distance;
         this.transactions = transactions;
     }
@@ -145,13 +148,13 @@ public class Business {
         this.isClosed = isClosed;
     }
 
-    public List<Category> getCategories() {
-        return categories;
-    }
-
-    public void setCategories(List<Category> categories) {
-        this.categories = categories;
-    }
+//    public List<Category> getCategories() {
+//        return categories;
+//    }
+//
+//    public void setCategories(List<Category> categories) {
+//        this.categories = categories;
+//    }
 
     public Integer getReviewCount() {
         return reviewCount;
@@ -177,13 +180,13 @@ public class Business {
         this.url = url;
     }
 
-    public Coordinates getCoordinates() {
-        return coordinates;
-    }
-
-    public void setCoordinates(Coordinates coordinates) {
-        this.coordinates = coordinates;
-    }
+//    public Coordinates getCoordinates() {
+//        return coordinates;
+//    }
+//
+//    public void setCoordinates(Coordinates coordinates) {
+//        this.coordinates = coordinates;
+//    }
 
     public String getImageUrl() {
         return imageUrl;
@@ -193,13 +196,13 @@ public class Business {
         this.imageUrl = imageUrl;
     }
 
-    public Location getLocation() {
-        return location;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
-    }
+//    public Location getLocation() {
+//        return location;
+//    }
+//
+//    public void setLocation(Location location) {
+//        this.location = location;
+//    }
 
     public Double getDistance() {
         return distance;
