@@ -1,4 +1,4 @@
-package com.moringaschool.myrestaurants.models;
+package com.moringaschool.myrestaurants;
 
 import java.util.ArrayList;
 

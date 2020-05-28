@@ -1,8 +1,5 @@
 package com.moringaschool.myrestaurants;
 
-import com.moringaschool.myrestaurants.Constants;
-import com.moringaschool.myrestaurants.models.Restaurant;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

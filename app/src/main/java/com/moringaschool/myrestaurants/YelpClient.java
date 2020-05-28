@@ -1,6 +1,6 @@
-package com.moringaschool.myrestaurants.network;
+package com.moringaschool.myrestaurants;
 
-import com.moringaschool.myrestaurants.network.YelpApi;
+import com.moringaschool.myrestaurants.YelpApi;
 
 import java.io.IOException;
 
