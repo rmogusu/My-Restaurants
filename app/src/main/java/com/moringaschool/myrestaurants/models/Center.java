@@ -1,17 +1,20 @@
 
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Center {
 
     @SerializedName("latitude")
     @Expose
-    private Double latitude;
+     Double latitude;
     @SerializedName("longitude")
     @Expose
-    private Double longitude;
+     Double longitude;
 
     /**
      * No args constructor for use in serialization

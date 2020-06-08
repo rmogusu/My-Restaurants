@@ -1,32 +1,35 @@
 
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Location {
 
     @SerializedName("city")
     @Expose
-    private String city;
+    String city;
     @SerializedName("country")
     @Expose
-    private String country;
+    String country;
     @SerializedName("address2")
     @Expose
-    private String address2;
+    String address2;
     @SerializedName("address3")
     @Expose
-    private String address3;
+    String address3;
     @SerializedName("state")
     @Expose
-    private String state;
+     String state;
     @SerializedName("address1")
     @Expose
-    private String address1;
+    String address1;
     @SerializedName("zip_code")
     @Expose
-    private String zipCode;
+     String zipCode;
 
     /**
      * No args constructor for use in serialization

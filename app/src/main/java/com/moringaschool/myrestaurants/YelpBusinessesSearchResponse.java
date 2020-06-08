@@ -4,18 +4,23 @@ package com.moringaschool.myrestaurants;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.moringaschool.myrestaurants.models.Business;
+import com.moringaschool.myrestaurants.models.Region;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class YelpBusinessesSearchResponse {
 
     @SerializedName("total")
     @Expose
-    private Integer total;
+     Integer total;
     @SerializedName("businesses")
     @Expose
-    private List<Business> businesses = null;
+     List<Business> businesses = null;
     @SerializedName("region")
     @Expose
-    private Region region;
+     Region region;
 
     /**
      * No args constructor for use in serialization

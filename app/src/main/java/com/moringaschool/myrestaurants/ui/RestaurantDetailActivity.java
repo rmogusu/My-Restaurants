@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 
-import com.moringaschool.myrestaurants.Business;
+import com.moringaschool.myrestaurants.models.Business;
 import com.moringaschool.myrestaurants.R;
 import com.moringaschool.myrestaurants.adapters.RestaurantPagerAdapter;
 import com.moringaschool.myrestaurants.models.Restaurant;
@@ -23,7 +23,8 @@ import butterknife.ButterKnife;
 public class RestaurantDetailActivity extends AppCompatActivity {
     @BindView(R.id.viewPager) ViewPager mViewPager;
     private RestaurantPagerAdapter adapterViewPager;
-    List<Business> mRestaurants;
+    public List<Business> mRestaurants;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +38,6 @@ public class RestaurantDetailActivity extends AppCompatActivity {
         adapterViewPager = new RestaurantPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, mRestaurants);
         mViewPager.setAdapter(adapterViewPager);
         mViewPager.setCurrentItem(startingPosition);
+
     }
 }
